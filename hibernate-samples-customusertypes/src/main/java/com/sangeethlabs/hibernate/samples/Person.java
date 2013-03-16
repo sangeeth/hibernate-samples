@@ -11,6 +11,10 @@ public class Person implements Serializable {
 	private String name;
 	
 	private Gender gender;
+	
+	private Occupation occupation;
+	
+	private boolean alive;
 
 	public Person() {
 		super();
@@ -39,5 +43,21 @@ public class Person implements Serializable {
 	public void setGender(Gender gender) {
 		this.gender = gender;
 	}
+
+    public Occupation getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(Occupation occupation) {
+        this.occupation = occupation;
+    }
+
+    public boolean isAlive() {
+        return alive;
+    }
+
+    public void setAlive(boolean alive) {
+        this.alive = alive;
+    }
 	
 }
